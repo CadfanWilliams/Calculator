@@ -17,30 +17,43 @@ class calculator
         String operatorInput = scanner.next();
         int inputparsed = Integer.parseInt(operatorInput);
         scanner.close();
-
+        String outputString = "";
         switch (inputparsed) {
             case 1:
                 Add add = new Add(numbs);
-                System.out.println(add.outputString);
+                outputString  = add.outputString;
+                System.out.println(outputString);
+
                 break;
             case 2:
                 Subtract sub = new Subtract(numbs);
-                System.out.println(sub.outputString);
+                outputString = sub.outputString;
+                System.out.println(outputString);
+
                 break;
             case 3:
                 Multiply multiply = new Multiply(numbs);
-                System.out.println(multiply.outputString);
+                outputString = multiply.outputString;
+                System.out.println(outputString);
+
                 break;
             case 4:
                 Divide divide = new Divide(numbs);
-                System.out.println(divide.outputString);
+                outputString = divide.outputString;
+                System.out.println(outputString);
+
                 break;
             default:
 
                 System.out.println("Please re run this program and enter a number between 1 and 3");
                 break;
+        }
 
-        }}
+        Logger logger = new Logger("output", outputString);
+
+
+    }
+
 
 
 
@@ -64,7 +77,7 @@ class calculator
                 {
                     nums.add(Integer.parseInt(input.get(i)));
 
-                    //in future, I can add validation techniques to ensure that the data entered is safe.
+                    //in the future, I can add validation techniques to ensure that the data entered is safe.
                 }
 
                 i++;
@@ -83,7 +96,8 @@ class calculator
                 {
                     nums.add(Integer.parseInt(currentLine));
                 }
-                System.out.println(nums);
+
+                reader.close();
             }catch (IOException e)
             {
                 e.printStackTrace();

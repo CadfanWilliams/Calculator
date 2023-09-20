@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1e27e87-1d2a-495a-b01b-919d55f19608" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Add.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Divide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multiply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Subtract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
